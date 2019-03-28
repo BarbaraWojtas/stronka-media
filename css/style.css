@@ -5,6 +5,14 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?m5heh8");
+  src: url("fonts/icomoon.eot?m5heh8#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?m5heh8") format("truetype"), url("fonts/icomoon.woff?m5heh8") format("woff"), url("fonts/icomoon.svg?m5heh8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container-fluid {
   width: 100%;
 }
@@ -25,6 +33,7 @@
 .header-main-fluid {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#3dcdbc), color-stop(#2bc3c0), color-stop(#22b8c2), color-stop(#27adc1), to(#33a2bd));
   background-image: linear-gradient(to right bottom, #3dcdbc, #2bc3c0, #22b8c2, #27adc1, #33a2bd);
+  padding: 100px;
 }
 
 .header-main {
@@ -42,6 +51,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 15px;
+  padding: 20px 0;
+}
+
+.header-main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-main > div > h2 {
@@ -51,26 +74,122 @@
   color: #fff;
   text-align: center;
   margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .header-main > div > p {
   font-family: 'Raleway', normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .header-main > div > a {
   font-family: 'Raleway', normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 15px;
   text-align: center;
-  display: block;
+  display: inline-block;
+  padding: 20px;
+  background-color: #fff;
+  color: #33a2bd;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header-main > img {
   width: 80%;
+  max-width: 300px;
+}
+
+.section1-main-fluid {
+  background-color: #F6F6F6;
+  padding: 30px;
+}
+
+.section1-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.section2-main-fluid {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.section2-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2-main > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2-main > div > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.section2-main > div > p {
+  font-family: 'Raleway', normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section2-main > div > a {
+  font-family: 'Raleway', normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  background-color: #00ffa3;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section2-main > div > span {
+  font-family: 'icomoon';
 }
 
 @media (min-width: 576px) {
@@ -106,6 +225,31 @@
   }
   .hidden-lg {
     display: none;
+  }
+  .header-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 15px;
+  }
+  .header-main > div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 50px;
+  }
+  .header-main > img {
+    max-width: 300px;
   }
 }
 
